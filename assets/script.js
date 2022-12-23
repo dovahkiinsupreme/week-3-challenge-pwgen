@@ -51,6 +51,11 @@ function generatePassword(length, characters) {
   var result = "";
   //add length amount of random characters from charArray to result string
   
+  
+  for (i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random()) * length)
+  }
+
   //return result
   return result;
 }
